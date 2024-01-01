@@ -1,6 +1,15 @@
 {
   "expo": {
-    "name": "bluescout-mobile",
-    "slug": "bluescout-mobile"
+    "name": "BlueScout",
+    "slug": "bluescout-mobile",
+    "userInterfaceStyle": "automatic",
+    "android": {
+      "softwareKeyboardLayoutMode": "pan"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "89c6bada-5b86-446b-8e8e-6b40f66b2303"
+      }
+    }
   }
 }
