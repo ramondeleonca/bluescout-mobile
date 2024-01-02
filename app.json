@@ -2,6 +2,7 @@
   "expo": {
     "name": "BlueScout",
     "slug": "bluescout-mobile",
+    "description": "Blue Scout - Blue Ignition's scouting solution.",
     "userInterfaceStyle": "automatic",
     "android": {
       "softwareKeyboardLayoutMode": "pan"
@@ -10,6 +11,13 @@
       "eas": {
         "projectId": "89c6bada-5b86-446b-8e8e-6b40f66b2303"
       }
+    },
+    "icon": "/assets/Ignito-1024x1024.png",
+    "scheme": "bluescout",
+    "splash": {},
+    "updates": {
+      "checkAutomatically": "WIFI_ONLY",
+      "enabled": true
     }
   }
 }

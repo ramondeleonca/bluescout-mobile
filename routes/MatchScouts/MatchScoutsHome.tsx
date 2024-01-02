@@ -9,9 +9,7 @@ export default function MatchScoutsHome({ navigation, route }: { navigation: Nat
     const [matchScouts, setMatchScouts] = useState([]);
     const [showDeleteDialog, setShowDeleteDialog] = useState(false);
 
-    useEffect(() => {
-        getAllMatchScouts().then(setMatchScouts);
-    }, [route.path]);
+    useEffect(() => {getAllMatchScouts().then(setMatchScouts)}, [route.path, route.name]);
 
     const deleteAllMatchScoutsAction = () => {
         setShowDeleteDialog(false);
@@ -54,9 +52,15 @@ export default function MatchScoutsHome({ navigation, route }: { navigation: Nat
                     </View>
 
                     <View>
+                        <View style={{display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "space-between"}}>
+                            <Button style={{marginLeft: 10, width: "auto"}} onPress={() => navigation.navigate("NewMatchScout")} mode="text" icon="strategy">New match scout</Button>
+
+                            <Button style={{marginRight: 10, width: "auto"}} onPress={() => navigation.navigate("BatchUpload")} mode="contained" icon="upload-multiple">Batch Upload</Button>
+                        </View>
+
                         {
                             matchScouts.map((scout, i) => (
-                                <Button key={i} onPress={() => navigation.navigate("MatchScout", {scout})} mode="contained" style={{margin: 10}}>{scout.teamNumber} - {scout.matchNumber}</Button>
+                                <Button key={i} onPress={() => navigation.navigate("MatchScout", {scout})} mode="contained" icon="strategy" style={{margin: 10}}>{scout.teamNumber} - {scout.matchNumber}</Button>
                             ))
                         }
                     </View>

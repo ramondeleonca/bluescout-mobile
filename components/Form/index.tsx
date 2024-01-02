@@ -5,6 +5,7 @@ import { Button, useTheme } from "react-native-paper"
 import { useForm } from "react-hook-form"
 import { View } from "react-native"
 import styles from "./styles"
+import { useEffect } from "react"
 
 export type FormProps = {
     descriptor: IForm,
@@ -12,7 +13,7 @@ export type FormProps = {
 }
 export default function Form(props: FormProps) {
     const theme = useTheme();
-    const { control, setFocus, handleSubmit} = useForm({ values: props.data });
+    const { control, setFocus, handleSubmit } = useForm({ values: props.data });
 
     return (
         <KeyboardAwareScrollView enableOnAndroid={true}>

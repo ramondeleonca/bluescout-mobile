@@ -49,7 +49,7 @@ export default {
             {
                 name: "stoppedSeconds",
                 type: "text",
-                rules: {required: true},
+                rules: {},
                 textInputProps: {
                     style: styles.input,
                     keyboardType: "number-pad",
@@ -60,7 +60,7 @@ export default {
             {
                 name: "autoDocked",
                 type: "select",
-                rules: {required: true},
+                rules: {},
                 textInputProps: {
                     style: styles.input,
                     label: "Auto Balance",
@@ -104,7 +104,7 @@ export default {
             {
                 name: "topAutoCubes",
                 type: "text",
-                rules: {required: true},
+                rules: {},
                 textInputProps: {
                     style: styles.input,
                     keyboardType: "number-pad",
@@ -115,7 +115,7 @@ export default {
             {
                 name: "topAutoCones",
                 type: "text",
-                rules: {required: true},
+                rules: {},
                 textInputProps: {
                     style: styles.input,
                     keyboardType: "number-pad",
@@ -129,7 +129,7 @@ export default {
             {
                 name: "middleAutoCubes",
                 type: "text",
-                rules: {required: true},
+                rules: {},
                 textInputProps: {
                     style: styles.input,
                     keyboardType: "number-pad",
@@ -140,7 +140,7 @@ export default {
             {
                 name: "middleAutoCones",
                 type: "text",
-                rules: {required: true},
+                rules: {},
                 textInputProps: {
                     style: styles.input,
                     keyboardType: "number-pad",
@@ -154,7 +154,7 @@ export default {
             {
                 name: "bottomAutoCubes",
                 type: "text",
-                rules: {required: true},
+                rules: {},
                 textInputProps: {
                     style: styles.input,
                     keyboardType: "number-pad",
@@ -165,7 +165,7 @@ export default {
             {
                 name: "bottomAutoCones",
                 type: "text",
-                rules: {required: true},
+                rules: {},
                 textInputProps: {
                     style: styles.input,
                     keyboardType: "number-pad",
@@ -186,7 +186,7 @@ export default {
             {
                 name: "topTeleCubes",
                 type: "text",
-                rules: {required: true},
+                rules: {},
                 textInputProps: {
                     style: styles.input,
                     keyboardType: "number-pad",
@@ -197,7 +197,7 @@ export default {
             {
                 name: "topTeleCones",
                 type: "text",
-                rules: {required: true},
+                rules: {},
                 textInputProps: {
                     style: styles.input,
                     keyboardType: "number-pad",
@@ -211,7 +211,7 @@ export default {
             {
                 name: "middleTeleCubes",
                 type: "text",
-                rules: {required: true},
+                rules: {},
                 textInputProps: {
                     style: styles.input,
                     keyboardType: "number-pad",
@@ -222,7 +222,7 @@ export default {
             {
                 name: "middleTeleCones",
                 type: "text",
-                rules: {required: true},
+                rules: {},
                 textInputProps: {
                     style: styles.input,
                     keyboardType: "number-pad",
@@ -236,7 +236,7 @@ export default {
             {
                 name: "bottomTeleCubes",
                 type: "text",
-                rules: {required: true},
+                rules: {},
                 textInputProps: {
                     style: styles.input,
                     keyboardType: "number-pad",
@@ -247,7 +247,7 @@ export default {
             {
                 name: "bottomTeleCones",
                 type: "text",
-                rules: {required: true},
+                rules: {},
                 textInputProps: {
                     style: styles.input,
                     keyboardType: "number-pad",

@@ -56,7 +56,7 @@ export default function RobotScoutsHome({ navigation, route }: { navigation: Nat
                     <View>
                         {
                             robotScouts.map((scout, i) => (
-                                <Button key={i} onPress={() => navigation.navigate("RobotScout", {scout})} mode="contained" style={{margin: 10}}>{scout.teamNumber} - {scout.teamName}</Button>
+                                <Button key={i} onPress={() => navigation.navigate("RobotScout", {scout})} mode="contained" icon="robot" style={{margin: 10}}>{scout.teamNumber} - {scout.teamName}</Button>
                             ))
                         }
                     </View>

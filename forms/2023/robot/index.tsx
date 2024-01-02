@@ -28,7 +28,7 @@ export default {
         {
             name: "robotName",
             type: "text",
-            rules: {required: true},
+            rules: {},
             textInputProps: {
                 label: "Robot Name",
                 mode: "outlined"
